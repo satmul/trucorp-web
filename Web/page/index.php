@@ -2,7 +2,7 @@
 $ip = "172.18.0.3"; // IP SERVER DATABASE SETELAH CONNECT DOCKER NETWORK
 $username = "root";
 $password = "root";
-$dbname = "trucorps";
+$dbname = "Trucorp";
 
 // Create connection
 $conn = mysqli_connect($ip, $username, $password, $dbname);
