@@ -1,6 +1,6 @@
-CREATE DATABASE trucorps;
+CREATE DATABASE Trucorp;
 
-USE trucorps;
+USE Trucorp;
 
 CREATE TABLE users(id CHAR (5) PRIMARY KEY, nama VARCHAR(20), kantor VARCHAR(20) 
 CHECK (kantor like 'Pusat' or kantor like 'Cabang'));
