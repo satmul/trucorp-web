@@ -10,13 +10,13 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT COUNT(nama) as "jumlah user" FROM users";
+$sql = "SELECT COUNT(nama) as jumlah user FROM users";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
 
   while($row = mysqli_fetch_assoc($result)) {
-    echo "Jumlah User: " . $row["nama"]. "<br>";
+    echo "Jumlah User: " . $row["jumlah user"]. "<br>";
   }
 } else {
   echo "Data kosong";
